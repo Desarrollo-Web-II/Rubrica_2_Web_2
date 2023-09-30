@@ -4,7 +4,7 @@ import { createBooking, deleteBooking, getBooking, getBookings, updateBooking } 
 
 const router = Router()
 
-//Rutas de reservas
+//----------------------------------- RUTAS DE BOOKINGS-------------------------------------
 //Cosultar
 router.get('/bookings', getBookings)
 router.get('/bookings/:id', getBooking)

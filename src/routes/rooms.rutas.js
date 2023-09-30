@@ -4,8 +4,7 @@ import { createRoom, deleteRoom, getRoom, getRooms, updateRoom } from "../contro
 
 const router = Router()
 
-//Rutas de reservas
-//Cosultar
+//----------------------------------- RUTAS DE ROOMS-------------------------------------
 router.get('/rooms', getRooms)
 router.get('/rooms/:id', getRoom)
 
