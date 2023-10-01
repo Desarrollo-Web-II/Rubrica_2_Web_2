@@ -28,7 +28,7 @@ export const getRoom = async (req, res) => {
 // funcion para Crear habitaciones  
 export const createRoom = async (req, res) => {
     try {
-        const { numero, tipo, valor } = req.params;
+        const { numero, tipo, valor } = req.body;
         
         // Se Realiza una validación básica de los datos aquí.
 
@@ -50,7 +50,7 @@ export const updateRoom = async (req, res) => {
 
     try {
         const { id } = req.params;
-        const { numero, tipo, valor  } = req.params; 
+        const { numero, tipo, valor  } = req.body; 
 
         // Realiza una validación básica de los datos aquí, por ejemplo, asegúrate de que los campos requeridos estén presentes.
 
@@ -77,7 +77,7 @@ export const deleteRoom = async (req, res) => {
             message:'Habitacion no encontrada'
         })
         console.log(result)
-        res.send(204)
+        res.status(200).json({message: 'Habitacion eliminada correctamente'})
     } catch (error) {
         res.status(500).json({message: 'Ha ocurrido un Error'})
     }
