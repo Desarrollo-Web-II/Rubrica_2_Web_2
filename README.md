@@ -1,8 +1,9 @@
 <h1 align="center">Hola 👋, Nuestro grupo esta comformado por: yan de la torre, maroly velazques y aldo puello</h1>
 <h3 align="center">Rubrica Corte #2</h3>
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
+<p align="left">Despliegue: https://rubrica-2-web-2.onrender.com/api/rooms/5<br><br>//----------------------------------- RUTAS DE BOOKINGS-------------------------------------<br>//Cosultar<br>router.get('/bookings', getBookings)<br>router.get('/bookings/:codigo', getBooking)<br><br>//Agregar<br>router.post('/bookings', createBooking)<br><br>//Actualizar<br>router.patch('/bookings/:codigo', updateBooking)<br><br>//Eliminar<br>router.delete('/bookings/:codigo', deleteBooking)<br><br><br>//----------------------------------- RUTAS DE ROOMS-------------------------------------<br>router.get('/rooms', getRooms)<br>router.get('/rooms/:id', getRoom)<br><br>//Agregar<br>router.post('/rooms', createRoom)<br><br>//Actualizar<br>router.patch('/rooms/:id', updateRoom)<br><br>//Eliminar<br>router.delete('/rooms/:id', deleteRoom)</p>
+
+###
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
